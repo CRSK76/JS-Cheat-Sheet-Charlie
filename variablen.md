@@ -75,4 +75,26 @@ Zitat: <https://tinyurl.com/84zjya8h>
 
 **-> _`` / Backticks_ haben die Besonderheit, man kann in ihnen weitere Variablen mit _${Wert}_ in den Code schreiben und somit mit dem ausgewiesenen String kombinieren kann und Strings mit Backticks können _über Zeilenumbrüche hinweg_ geschrieben werden**
 
-Weiteres zu Strings unter: <a href="string.mde">siehe folgendes</a>
+Weiteres zu Strings unter: <a href="string.md">siehe folgendes</a>
+
+# unterschiedliche Wertigkeit von Variablen
+
+-> zuerst Zugriff auf Variablen mit lokalem Bezug, und dann erst mit übergeordneten bis hin zum globalen Sichtbarkeitsbereich
+
+-> bei Wertabfragen, in denen die Variable nicht gefunden wird, kommt es zur Ausnahme
+
+-> falls es sich allerdings um eine Wertzuweisung handelt zu einer Variable, die nicht existent ist, wird diese automatisch auf global gesetzt
+
+# globale Variablen
+
+-> sind im gesamten Dokument gültig, stehen immer zur Verfügung
+
+-> Variablen innerhalb von Funktionen (ohne mit const, let oder var) deklariert werden, sind es globale Variablen
+
+-> var-Deklaration außerhalb einer Funktion -> ebenso dann globalm Variable
+
+# lokale Variablen
+
+-> Deklarierung innerhalb von Funktionen (nur innerhalb dieser gültig)
+
+-> Funktion mit Parametern -> Parameter = lokale Variablen
