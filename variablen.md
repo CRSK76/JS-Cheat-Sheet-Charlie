@@ -58,3 +58,21 @@ Zitat: <https://tinyurl.com/84zjya8h>
         PI     = 3.14; 
     let   text   = 'Hallo Welt!';
     let   alter;
+
+# Datentypen der Variablen
+
+    //(string), true (boolean), 1 (int), 1.1 (float), ['src/'] (array), {"watchjs":"wert"} (object), function () {} (function)
+
+## String
+
+-> Zeichenkette, Abfolge von Zeichen
+
+-> einfasst mit 
+
+    `` = Backticks
+    '' = Singlequotes
+    "" = Doublequotes
+
+**-> _`` / Backticks_ haben die Besonderheit, man kann in ihnen weitere Variablen mit _${Wert}_ in den Code schreiben und somit mit dem ausgewiesenen String kombinieren kann und Strings mit Backticks können _über Zeilenumbrüche hinweg_ geschrieben werden**
+
+Weiteres zu Strings unter: <a href="string.mde">siehe folgendes</a>
