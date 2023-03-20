@@ -19,17 +19,17 @@ Nodemon
 ### Quelltext packed.json
 
     {
-        "name": "variables-operators-strings",
+        "name": "Projektname des jeweiligen Projektes",
         "version": "1.0.0",
         "description": "",
-        "main": "",
+        "main": "Name der main.js, falls eine vorhanden ist",
         "type": "module",
         "scripts": {
             "test": "echo \"Error: no test specified\" && exit 1",
             "watchjs": "nodemon"
      },
         "keywords": [],
-        "author": "Carsten",
+        "author": "Charlie",
         "license": "ISC",
         "devDependencies": {
         "nodemon": "^2.0.21"
@@ -38,4 +38,22 @@ Nodemon
 
 -> bei scripts muss **"watchjs": "nodemon"** stehen oder **"watchjs": "nodemon dateiname"** (der zu überwachenden Datei, falls es sich nur um eine Datei handelt, die zu überwachen ist)
 
+### mit src-Ordner und Watching
 
+#### Quelltext der nodemon.json
+
+    {
+        "watch": [
+             "src/"
+        ],
+        "exec": "node src/main.js"
+    }
+
+-> es muss die main.js angegeben werden, und der Source-Ordner-Pfad, wo die zu überwachenden Dateien dann abgespeichert werden
+
+#### Quelltext der main.js
+
+    import './datei.js';
+    import './datei.js';
+
+-> hier werden die zu überwachenden Dateien importiert
