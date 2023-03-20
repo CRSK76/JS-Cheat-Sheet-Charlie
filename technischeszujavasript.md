@@ -16,6 +16,8 @@ Nodemon
 
 -> mit **npm init** initialisert dann Nodemon in einem bestimmten Projektordner für ein bestimmtes Projekt, so dass die **packed.json** und die **nodemon.json** angelegt werden. Mit einem **src-ordner**, in dem die zu überwachenden Dateien hineinkommen
 
+-> **npm run** zeigt im Allgemeinen, welche Befehle es gibt
+
 ### Quelltext packed.json
 
     {
@@ -57,3 +59,12 @@ Nodemon
     import './datei.js';
 
 -> hier werden die zu überwachenden Dateien importiert
+
+**-> WICHTIG!! Die Importfunktion wird bald nicht mehr unterstützt.**
+
+-> Die Arbeit mit nodemon kann wichtig sein für größere JS-Projekte.
+
+### Starten von Nodemon mit watchjs
+
+-> **npm run watchjs** startet das Watching, muss aber in dem Ordner gestartet werden, in dem auch die konfigurierte packed.json liegt
+
