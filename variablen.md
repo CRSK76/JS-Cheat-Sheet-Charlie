@@ -49,4 +49,12 @@
 
 Zitat: <https://tinyurl.com/84zjya8h>
 
+-> Variablen text und alter werden mit let angelegt -> aufgrund veränderliche Werte im Scriptverlauf
 
+    **Variablendeklaration am Anfang eines Scripts.**
+
+    const button = document.querySelector('#interaktiv'),
+        output = document.querySelector('output'),
+        PI     = 3.14; 
+    let   text   = 'Hallo Welt!';
+    let   alter;
