@@ -68,3 +68,5 @@ Nodemon
 
 -> **npm run watchjs** startet das Watching, muss aber in dem Ordner gestartet werden, in dem auch die konfigurierte packed.json liegt
 
+-> **strg c** stoppt den Nodemon-Server
+
