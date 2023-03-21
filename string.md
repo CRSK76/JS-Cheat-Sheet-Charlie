@@ -117,6 +117,21 @@ oder
     console.log('padEnd -', pad.padEnd(7, '.'));
     console.log('padStart -', pad.padStart(7, '.'));
 
+
+### Index - Notation
+
+    let programmingLanguage = 'JavaScript';
+
+    let isFun = true;
+
+    console.log(programmingLanguage + ' is fun: ' + isFun);
+
+    //10. Gib das "J" und "S" von "JavaScript" aus der Variable "Programmiersprache" auf der Konsole aus. Mittels Index-Notation.
+    console.log(programmingLanguage[0] + ' ' + programmingLanguage[4]);
+
+-> zeigt die Buchstaben J und S in der Konsole / im Terminal an. **Variable[Nummer des Buchstabens]** 
+-> wird mit eckiger Klammer geschrieben
+
 ### Weitere String-Properties
 
 -> **slice()** <https://wiki.selfhtml.org/wiki/JavaScript/Objekte/String/slice>
