@@ -102,7 +102,11 @@ oder
         ausgabe.innerHTML = Passwort;
     }
 
-### includes('') - Prüfen ob eine bestimmte Zeichenkette im Wert einer Variable enthalten ist
+### includes('') - Prüfen ob eine bestimmte Zeichenkette im Wert / in diesem Falle String einer Variable enthalten ist
+
+-> optional kann mit der Hilfe einer positiven Ganzzahl (Integer-Zahl) die Startposition für die Suche angegeben werden
+
+-> das Suchergebnis ist true oder false
 
     console.log('includes -', 'Einen lange Satz.'.includes('Satz'));
     console.log('includes -', 'Einen lange Satz.'.toLowerCase().includes('einen', 7));
@@ -112,3 +116,9 @@ oder
     const pad = 'Mehr';
     console.log('padEnd -', pad.padEnd(7, '.'));
     console.log('padStart -', pad.padStart(7, '.'));
+
+### Weitere String-Properties
+
+-> **slice()** <https://wiki.selfhtml.org/wiki/JavaScript/Objekte/String/slice>
+
+-> **Übersicht aller:** <https://wiki.selfhtml.org/wiki/JavaScript/Objekte/String>
