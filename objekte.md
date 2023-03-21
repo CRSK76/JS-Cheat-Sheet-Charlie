@@ -1,7 +1,9 @@
 # Objekte
 
 -> Math.max();
+
 -> Math.min();
+
 
     const youngest = Math.min(
         // Maxim
