@@ -54,6 +54,8 @@
 
 -> <a href="operators.md">Alles über Operatoren:</a>
 
+-> <a href="objekte.md">Alles über Objekte:</a>
+
 ## Allgemeine Links
 
 -> **Markdown-Syntax**

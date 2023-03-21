@@ -17,7 +17,7 @@
 
 -> isFinite() prüft einen Wert, ob er Number ist und eine gültige Zahl darfstellt 
 
--> **globale isNaN-Funktion** im Gegensatz ur **Number.isNaN** keie Typkonvertierung
+-> **globale isNaN-Funktion** im Gegensatz zur **Number.isNaN** keie Typkonvertierung
 
 -> Syntax: Number.isNan(wert); -> Wert = der zu Prüfen ist, prüft auf ist der Wert keine Number? mit doppelter Verneinung -> ja, Wert ist eine Number
 
@@ -95,6 +95,16 @@
     const pi = 3.1415926535897932384626433832795028841971693993751058209749445923078164062862089986280348253421170679821480865132823066470938446095505822317253594081284811174502841027019385211055596446229489
 
     console.log(pi.toFixed(5))
+
+## Zahlenwert
+
+-> ganze Zahlen = integere Zahlen, negative Zahlwerte mit - voran
+
+-> Dezimalzahlen = float, auch negative Zahlwerte möglich, mit - voran
+
+## Weiteres
+
+<https://wiki.selfhtml.org/wiki/JavaScript/Objekte/Number>
 
 
 
