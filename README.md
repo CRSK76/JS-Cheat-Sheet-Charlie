@@ -40,7 +40,7 @@
 
 ## Inhalt meines JS-Cheat-Sheets
 
--> <a href="technischeszujavascript.md">Technische Implementierung:</a>  
+-> <a href="technischeszujavasript.md">Technische Implementierung:</a>  
 
 -> <a href="variablen.md">Alles über Variablen</a> 
 
@@ -58,3 +58,15 @@
 
 -> **Markdown-Syntax**
 <https://markdown-syntax.de>
+
+-> **JS lernen - Deutsch**
+<https://www.jshero.net/home.html>
+
+-> **JS lernen - Englisch**
+<https://www.educative.io/courses/the-complete-javascript-course-build-a-real-world-app-from-scratch>
+
+-> **JS lernen / Tutorials - Englisch**
+<https://www.w3schools.com/>
+
+-> **JS lernen / Englisch**
+<https://www.freecodecamp.org/>
