@@ -126,7 +126,10 @@ oder
 
     console.log(programmingLanguage + ' is fun: ' + isFun);
 
-    //10. Gib das "J" und "S" von "JavaScript" aus der Variable "Programmiersprache" auf der Konsole aus. Mittels Index-Notation.
+    //10. Gib das "J" und "S" von "JavaScript" aus der Variable "Programmiersprache" auf der Konsole aus. 
+
+    Mittels Index-Notation.
+
     console.log(programmingLanguage[0] + ' ' + programmingLanguage[4]);
 
 -> zeigt die Buchstaben J und S in der Konsole / im Terminal an. **Variable[Nummer des Buchstabens]** 
