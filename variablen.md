@@ -63,6 +63,12 @@ Zitat: <https://tinyurl.com/84zjya8h>
 
     //(string), true (boolean), 1 (int), 1.1 (float), ['src/'] (array), {"watchjs":"wert"} (object), function () {} (function)
 
+## null
+
+-> eigener Datentyp, hat keinen Wert
+
+-> weder Zahl, noch String
+
 ## String
 
 -> Zeichenkette, Abfolge von Zeichen
