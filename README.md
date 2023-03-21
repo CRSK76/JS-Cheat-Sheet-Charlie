@@ -44,11 +44,13 @@
 
 -> <a href="variablen.md">Alles über Variablen</a> 
 
--> **Datentypen**s der Variablen:
+-> <a href="https://wiki.selfhtml.org/wiki/JavaScript/Datentyp">**Datentypen**</a> der Variablen:
 
 -> <a href="string.md">Alles über Strings:</a>
 
 -> <a href="null.md">Alles über Null:</a>
+
+-> <a href="numbers.md">Alles über Zahlen:</a>
 
 -> <a href="operators.md">Alles über Operatoren:</a>
 

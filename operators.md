@@ -163,4 +163,6 @@ ungleich oder nicht gleichen Typs sind, sonst false.
 
     console.log('calc -', result);
 
+-> weiteres zu ternerey folgt noch
+
 -> **Weiteres:** <a href="https://wiki.selfhtml.org/wiki/JavaScript/Operatoren/Logische_Operatoren">Alles über Vergleichsoperatoren</a>">
