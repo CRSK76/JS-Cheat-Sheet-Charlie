@@ -135,8 +135,37 @@ oder
 -> zeigt die Buchstaben J und S in der Konsole / im Terminal an. **Variable[Nummer des Buchstabens]** 
 -> wird mit eckiger Klammer geschrieben
 
-### Weitere String-Properties
+### split()
 
--> **slice()** <https://wiki.selfhtml.org/wiki/JavaScript/Objekte/String/slice>
+-> zerlegt Zeichenketten in mehrere Teilzeichenketten. Die erzeugten Teilzeichenketten werden in einem Array gespeichert.
+
+-> Syntax: **str.split([separator[, limit]])** (erfordert Parameter)
+
+-> **separator:** ein Begrenzerzeichen oder eine Begrenzerzeichenfolge, die als Trennmerkmal für die Teilzeichenketten verwendet werden soll.
+
+-> **limit:** *(optional)* Zahlangabe, wie viele Split-Vorgänge maximal durchgeführt werden sollen.
+
+    let hw = "Hallo Welt";
+
+    let hwarray = hw.split("");
+    let hwreverse = hwarray.reverse()
+
+    console.log(hwreverse);
+
+    let result = hwreverse.join("");
+    console.log(result);
+
+-> Ausgabe im **nodemon**
+
+    [
+      't', 'l', 'e', 'W',
+     ' ', 'o', 'l', 'l',
+    'a', 'H'
+    ]
+    tleW ollaH
+
+    
+
+### Weitere String-Methods
 
 -> **Übersicht aller:** <https://wiki.selfhtml.org/wiki/JavaScript/Objekte/String>

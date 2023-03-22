@@ -205,7 +205,7 @@
 
 -> Der Parameter **ende** _zeigt_ nicht auf das letzte Element, das extrahiert werden soll, sondern **auf das Element davor**.
 
-### join
+### join()
 
 -> verbindet alle Elemente eines Arrays zu einer Zeichenkette
 
@@ -240,7 +240,7 @@
     │    9    │   'London'    │
     │   10    │   'Berlin'    │
     └─────────┴───────────────┘
-    
+
     //nach dem join
 
     Kuchumba, Pion Jang, Waschington, Toronto, Phnom Penh, Bangkok, Budapest, Prag, Valletta, London, Berlin
