@@ -14,6 +14,10 @@
 
     console.log('Hello World');
 
+    console.tabel(arraybeispiel)
+
+-> **console.tabel(arraybeispiel)** gibt ein Array als Tabelle mit den Index-Nummern der Array-Datenstruktur im Terminal aus -> zur besseren Orientierung (z.B. für Befehle wie slice oder splice)
+
 ## Glossar
 
 -> **declare** - Eine Variable einleiten/benennen
@@ -53,6 +57,8 @@
 -> <a href="numbers.md">Alles über Zahlen:</a>
 
 -> <a href="operators.md">Alles über Operatoren:</a>
+
+-> -> <a href="array.md">Alles über Arrays:</a>
 
 -> <a href="objekte.md">Alles über Objekte:</a>
 
