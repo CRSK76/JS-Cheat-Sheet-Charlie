@@ -48,7 +48,7 @@
 
 ### _charAt()_ oder bracket notation (Zeichen an einer Position ermitteln)
 
--> **charAt_(index)_** -> gewünscht Position, an der das Zeichen ausgelesen werden soll
+-> **charAt(index)** -> gewünscht Position, an der das Zeichen ausgelesen werden soll
 
     const charAt = 'test'.charAt(1); console.log('charAt -', charAt);
     const charAtBracket = 'test'[2]; console.log('charAtBracket -', charAtBracket);
@@ -164,7 +164,7 @@ oder
     ]
     tleW ollaH
 
-    
+
 
 ### Weitere String-Methods
 
