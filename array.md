@@ -177,4 +177,72 @@
     folder after concat- [ 5, 'four', 4.1, [ 'three', 3.1 ], 2, 'zero' ]
     folder2 after concat - [ 'blabla', 10, 'Alex' ]
 
+### splice()
+
+-> **entfernt** Elemente aus einem Array und **fügt** neue Elemente **ein**.
+
+-> Syntax: **Array.splice(position [, anzahl [, element0, ..., elementN] ])**
+
+->**position:** die Position im Array, an der Elemente gelöscht und eingefügt werden sollen. Ist dieser Wert negativ, dann wird vom Ende des Arrays aus gezählt.
+
+-> **anzahl:** die Anzahl der zu löschenden Elemente
+
+-> **element0, ..., elementN:** die neuen Elemente, die an der Position eingefügt werden sollen
+
+### slice()
+
+-> liefert einen Teil aus einem Array aus (Im Terminal), verändert aber das Array nicht. Wenn keine Endposition angegeben wurde, dann werden alle Elemente ab der Anfangsposition bis zum Ende zurückgeliefert.
+
+-> Syntax: **Array.slice(anfang [, ende])**
+
+-> **anfang** ist die Position des ersten Eintrags im Array, der extrahiert werden soll. 
+
+-> **ende** ist die Position des letzten Eintrags im Array, der nicht mehr extrahiert werden soll. 
+
+-> Die Parameter anfang und ende beziehen sind auf einen auf 0 (Null) basierenden Index vom Array. Das bedeutet, das erste Element im Array hat die Position 0 (Null). 
+
+-> **Beachten Sie:**
+
+-> Der Parameter **ende** _zeigt_ nicht auf das letzte Element, das extrahiert werden soll, sondern **auf das Element davor**.
+
+### join
+
+-> verbindet alle Elemente eines Arrays zu einer Zeichenkette
+
+-> Syntax: **join([Trennungstext])**
+
+-> join erwartet einen Parameter (Trennungstext), der zwischen die einzelnen Elemente eingefügt wird, wenn sie in Strings umgewandelt werden. 
+
+-> ausgegeben wird eine Zeichenkette mit allen Elementen aus dem Array, die duch den Parameter (Trennungstext) miteinander verbunden sind.
+
+-> **Beachten Sie:** Wird kein Trennungstext übergeben, werden die Elemente mit einem Komma (",") ohne weiteres Leerzeichen verbunden.
+
+    let stringworldcities = worldCities.join(", ");
+
+    console.log(stringworldcities);
+
+-> **nodemon** wirft aus:
+
+    //vor dem join
+
+    ┌─────────┬───────────────┐
+    │ (index) │    Values     │
+    ├─────────┼───────────────┤
+    │    0    │  'Kuchumba'   │
+    │    1    │  'Pion Jang'  │
+    │    2    │ 'Waschington' │
+    │    3    │   'Toronto'   │
+    │    4    │ 'Phnom Penh'  │
+    │    5    │   'Bangkok'   │
+    │    6    │  'Budapest'   │
+    │    7    │    'Prag'     │
+    │    8    │  'Valletta'   │
+    │    9    │   'London'    │
+    │   10    │   'Berlin'    │
+    └─────────┴───────────────┘
+    
+    //nach dem join
+
+    Kuchumba, Pion Jang, Waschington, Toronto, Phnom Penh, Bangkok, Budapest, Prag, Valletta, London, Berlin
+
 
