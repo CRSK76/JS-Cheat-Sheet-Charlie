@@ -58,7 +58,7 @@
 
 -> <a href="operators.md">Alles über Operatoren:</a>
 
--> -> <a href="array.md">Alles über Arrays:</a>
+-> <a href="array.md">Alles über Arrays:</a>
 
 -> <a href="objekte.md">Alles über Objekte:</a>
 
