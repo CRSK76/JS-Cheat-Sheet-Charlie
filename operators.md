@@ -163,6 +163,9 @@ ungleich oder nicht gleichen Typs sind, sonst false.
 
     console.log('calc -', result);
 
--> weiteres zu ternerey folgt noch
+## ternarey Operator = ternärer Operator
+
+-> Ternary wird bei einfachen if then else Bedingungen eingesetzt, wenn das Ergebnis der Bedingung true oder false ist.
+-> besteht aus 3 Operanten
 
 -> **Weiteres:** <a href="https://wiki.selfhtml.org/wiki/JavaScript/Operatoren/Logische_Operatoren">Alles über Vergleichsoperatoren</a>">
