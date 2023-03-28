@@ -165,7 +165,30 @@ ungleich oder nicht gleichen Typs sind, sonst false.
 
 ## ternarey Operator = ternärer Operator
 
--> Ternary wird bei einfachen if then else Bedingungen eingesetzt, wenn das Ergebnis der Bedingung true oder false ist.
--> besteht aus 3 Operanten
+-> Ternary wird bei einfachen if then else Bedingungen eingesetzt, **wenn das Ergebnis der Bedingung true oder false ist**.
+
+-> ist eine kompakte Schreibweise für **eine** bedingte Zuweisung
+
+-> besteht aus 3 Operanten (Variable **=** *Bedingung* **?** *wenn true* **:** *wenn false*;)
+
+    // Das ist die Einfache If-Else-Anweisung
+
+    if (let age < 18) {            // Bedingung
+        schockenOhneEnde ();    // true
+    } else {                    // Bedingung trifft nicht zu
+        noZiggies ();           // false
+    }
+
+    // oder eben 
+
+    vernunft =               // Variable
+    age < 18                // Bedingung (Operant I)
+    ? schockenOhneEnde ()   // wenn true (Operant II)
+    : noZiggies ();         // wenn false (Operant III)
+
+    vernunft = age < 18 ? noZiggschockenOhneEnde () : nochZiggies ();
+
+
+
 
 -> **Weiteres:** <a href="https://wiki.selfhtml.org/wiki/JavaScript/Operatoren/Logische_Operatoren">Alles über Vergleichsoperatoren</a>">
