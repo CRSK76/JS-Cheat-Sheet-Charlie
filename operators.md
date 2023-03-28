@@ -189,7 +189,7 @@ ungleich oder nicht gleichen Typs sind, sonst false.
 
     // Schreibweise für Fortgeschrittene
 
-    vernunft = age < 18 ? noZiggschockenOhneEnde () : nochZiggies ();
+    vernunft = age < 18 ? schockenOhneEnde () : nochZiggies ();
 
 
 
