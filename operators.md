@@ -179,12 +179,15 @@ ungleich oder nicht gleichen Typs sind, sonst false.
         noZiggies ();           // false
     }
 
-    // oder eben 
+    // oder eben der Ternäre Operant
+    // in Anfänger-Schreibweise
 
     vernunft =               // Variable
     age < 18                // Bedingung (Operant I)
     ? schockenOhneEnde ()   // wenn true (Operant II)
     : noZiggies ();         // wenn false (Operant III)
+
+    // Schreibweise für Fortgeschrittene
 
     vernunft = age < 18 ? noZiggschockenOhneEnde () : nochZiggies ();
 
