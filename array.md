@@ -26,6 +26,22 @@
 
     // Ich kann mit folder [] auf die einzelnen Schubfächer im Array zugreifen. Das System ist null-basiert. Sprich wir fangen bei Null an zu zählen
 
+    console.table(folder)
+
+    //nodemon gibt aus
+    
+    folder after concat- [ 5, 'four', 4.1, [ 'three', 3.1 ], 2, 'zero' ]
+    ┌─────────┬─────────┬─────┬────────┐
+    │ (index) │    0    │  1  │ Values │
+    ├─────────┼─────────┼─────┼────────┤
+    │    0    │         │     │   5    │
+    │    1    │         │     │ 'four' │
+    │    2    │         │     │  4.1   │
+    │    3    │ 'three' │ 3.1 │        │
+    │    4    │         │     │   2    │
+    │    5    │         │     │ 'zero' │
+    └─────────┴─────────┴─────┴────────┘
+
 
 -> **console.table()** gibt das array so aus
 
