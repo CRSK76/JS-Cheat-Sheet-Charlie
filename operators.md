@@ -191,6 +191,8 @@ ungleich oder nicht gleichen Typs sind, sonst false.
 
     vernunft = age < 18 ? schockenOhneEnde () : nochZiggies ();
 
+<a href="#ivt">If versus ternary</a>
+
 
 
 

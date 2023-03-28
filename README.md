@@ -1,4 +1,4 @@
-# JS-Cheat-Sheet-Charlie
+# JS-~~Cheat-Sheet~~Dokumentation-Charlie
 
 ## Allgemeine Befehle
 
@@ -61,6 +61,12 @@
 -> <a href="array.md">Alles über Arrays:</a>
 
 -> <a href="objekte.md">Alles über Objekte:</a>
+
+-> <a href="kontrollstrukturen.md">Alles über Kontrollstrukturen:</a>
+
+-> <a href="ifelse.md">Alles über If-Bedinungen:</a>
+
+-> <a href="switch.md">Alles über Switch_</a>
 
 ## Allgemeine Links
 
