@@ -148,10 +148,7 @@
 
 -> ??? für **ternary** kann ich die *const-Variable* verwenden, für **if-Bedingungen** nicht?
 
--> Assignment 14 -> 6. Prüfe, ob die folgenden Zahlen gerade Zahlen sind. Verwende einen Ternär und wenn die Zahl gerade ist (z.B. `30`), gib `30 is even` aus. Wenn nicht (z.B. `31`), gib `31 is odd` aus.
-num1 = 30
-num2 = 939
-num3 = 40.9
+-> Assignment 14 -> 6. Prüfe, ob die folgenden Zahlen gerade Zahlen sind. Verwende einen Ternär und wenn die Zahl gerade ist (z.B. `30`), gib `30 is even` aus. Wenn nicht (z.B. `31`), gib `31 is odd` aus. Verwende: num1 = 30, num2 = 939, num3 = 40.9
 
     const nr1 = 30;
     const nr2 = 31;
@@ -168,4 +165,4 @@ num3 = 40.9
         console.log(`Ergebnis mit if-else: ${nr} is odd`);
     }
 
--> <a href="opertors.md">tenary versus if</a>
+-> <a href="operators.md">tenary versus if</a>
