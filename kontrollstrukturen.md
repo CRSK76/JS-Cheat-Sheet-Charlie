@@ -8,4 +8,8 @@
 
 -> Wenn-Dann-Bedingung mit if: <a href="ifelse.md">Alles über If-Bedinungen:</a>
 
+-> Switch als Alternative zur If-Kette: <a href="switch.md">Alles über switch:</a>
+
 ## Schleifen
+
+-> Verschiedene Arten von Schleifen: <a href="schleifen.md">Alles über Schleifen:</a>

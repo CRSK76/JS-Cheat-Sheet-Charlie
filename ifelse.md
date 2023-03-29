@@ -104,11 +104,9 @@
         console.log('Weekend')
     }
 
--> eine if-Ketten kann auch durch den **switch-Befehl** ersetzt werden
+-> eine if-Ketten kann auch durch den **switch-Befehl** ersetzt werden: -> <a href="switch.md">Alles über switch</a>
 
 ## ternary-Operator / ternärer Operator
-
-<a href="#ivt"></a>
 
 -> für einfache If-Else-Bedingungen kann man auch den ternary-Operator verwenden
 
@@ -150,4 +148,24 @@
 
 -> ??? für **ternary** kann ich die *const-Variable* verwenden, für **if-Bedingungen** nicht?
 
--> 
+-> Assignment 14 -> 6. Prüfe, ob die folgenden Zahlen gerade Zahlen sind. Verwende einen Ternär und wenn die Zahl gerade ist (z.B. `30`), gib `30 is even` aus. Wenn nicht (z.B. `31`), gib `31 is odd` aus.
+* num1 = 30
+* num2 = 939
+* num3 = 40.9
+
+    const nr1 = 30;
+    const nr2 = 31;
+
+    //modulo (%) Operator -> Er liefert den verbleibenden Rest bei der Division zweier Zahlen. Ungerade Zahlen -> % -> Dezimalzahl wird ausgeliefert. Ein Float. 
+
+    const nr = 9;
+    const result = nr % 2;
+    (result === 0) ? console.log(`${nr} is even`) : console.log(`${nr} is odd`);
+
+    if (result === 0) {
+        console.log(`Ergebnis mit if-else: ${nr} is even`);
+    } else if (result !== 0) {
+        console.log(`Ergebnis mit if-else: ${nr} is odd`);
+    }
+
+-> <a href="opertors.md">tenary versus if</a>

@@ -66,7 +66,11 @@
 
 -> <a href="ifelse.md">Alles über If-Bedinungen:</a>
 
--> <a href="switch.md">Alles über Switch_</a>
+-> <a href="switch.md">Alles über Switch</a>
+
+-> <a href="schleifen.md">Alles über Schleifen</a>
+
+-> <a href="blockscope.md">Alles über blockscope</a>
 
 ## Allgemeine Links
 
