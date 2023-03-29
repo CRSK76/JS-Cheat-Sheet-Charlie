@@ -120,7 +120,7 @@
 
 -> **Syntax**:
 
-    for( Variable in iterierbares Objekt )
+    for( Variable of iterierbares Objekt )
     {
         Anweisungen
     }
