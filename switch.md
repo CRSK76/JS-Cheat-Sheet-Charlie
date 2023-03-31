@@ -33,7 +33,7 @@
 
 -> Das kann man nutzen, wenn für verschiedene Werte, die selbe Aktion / der selbe code ausgeführt werden soll.
 
-var Eingabe = window.prompt('Geben Sie eine Zahl von 1 bis 6 ein:', ''),
+    var Eingabe = window.prompt('Geben Sie eine Zahl von 1 bis 6 ein:', ''),
     Text = 'Ihre Eingabe ist ';
 
     switch (Eingabe) {
