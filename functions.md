@@ -155,4 +155,111 @@
 
     console.log(isString("word"));
 
+## Funktionen mit Parameter
+
+    var summe = function (summand1, summand2) {     // (1)
+        var summe = summand1 + summand2;            // (2)
+        return summe;                               // (3)
+    };
+    alert(summe(40, 2));                            // (4)
+
+    -> 1. erzeugt eine Funktion, die 2 **Argumente** erwartet, weißt sie der Variablen "summe" zu
+
+    -> 2. Funktionskörper Notierung der Logik der Funktion
     
+    -> 3. ein Wert wird zurückgegeben, die Summe einer Addition (return)
+    
+    -> 4. Aufruf der Funktion alert -> Übergabe des Rückgabewertes der Funktion Summe als **Paramter** an die Funktion allert
+
+-> **Parameter und Argumente? Was ist was?**
+
+-> **Argumente** sind die Werte, die man beim Aufrufen einer Funktion übergibt
+
+-> die Variablen, in denen dann die Argumente innherhalb einer Funktion zur Verfügung stehen = **Parameter**
+
+-> zu **wenige Argumente** -> es **bleiben Parameter frei** -> werden mit **undefinded** initialisiert
+
+-> bei **zuvielen Argumenten** -> nur soviele Argumente in Parameter übertragen, wie definiert sind -> Zugriff mittesl arguments
+
+-> **Definition** eines **Rest-Parameters**, wobei dieser die restlichen Parameter als **Array** aufnimmt -> wird mi **drei vorangestellten Punkten notiert** **...**
+
+    //4. Schreibe eine Funktion mit dem Namen `largestNumInArray` die ein Array von Zahlen als Parameter entgegennimmt. Sie soll die größte Zahl in dem Array zurückgeben. Für die Eingabe `[1,6,83,91,0,-4,1337,5]` sollte sie `1337` zurückgeben
+
+    function largestNumInArray(ar) {
+        // console.log(ar)
+        return Math.max(...ar)
+    }
+    largestNumInArray([1, 6, 83, 91, 0, -4, 1337, 5]);
+
+    console.log(largestNumInArray([1, 6, 83, 91, 0, -4, 1337, 5]));
+
+## Parameterbindung
+
+-> **wie Funktionsargumente mit Funktionsparameter verbunden sind (_call-by-reference_, _call-by-value_ sind die häufigsten)
+**
+
+-> **call by reference**
+
+-> **Parameter zeigt direkt auf die Variable, die sich im Funktionsargument befindet**
+
+-> **Vorteil**: man kann leicht mehrere Werte aus einer Funktion zurückerhalten, -> Die Werte, die die Funktion in ihre Parameter schreibt, dort landen, wo der Aufrufer sie hergeholt hat
+
+-> **Nachteil**: kann unbeabsichtigt geschehen, Funktionsargumente können ausschließlich Variablen sein (Formelergebnisse + Programmconstanten sind so nicht referenzierbar)
+
+-> **call by value** 
+
+-> **in den Parametern befinden sich Kopien der Argumente**
+
+-> **Vorteil**: kann nicht unbeabsichtigt überschrieben werden, Konstanten + Ausdrücke können ebenso als Argumente übergeben werden
+
+-> **Nachteil**: benötigt bei großen Arrays / Objekten viel Speicherplat, kann ein Programm merklich verlangsamen
+
+-> **Javascript arbeitet mit einer Mischform** (entscheidend ist, um welche Datenformm es sich handelt)
+
+-> primitive Daten (null, undefined, Zahlen, Strings, boolesche Werte) können problemlos mit call-by-value gebunden werden  -> benötigen nur wenig Speicherplatz
+
+-> anders Objekte wie Arrays -> sind eigenständige Einheiten im Speicher -> sie werden genaugenommen nicht in einer Variablen gespeichert, sondern in den Variablen befindet sich lediglich ein Verweis auf dieses Objekt
+
+-> weißt man genau diese Variable einer anderen zu, weißen dann beide Variablen auf das gleiche Objet (ähnlich verhält es sich, wenn das Objekt als Argument an eine Funktion übergeben wird. Sprich also ein Verweis auf das Objekt übergeben wird)
+
+-> **bei Objekten ähnelt das einem call-by-sharing **
+
+## Funktionen mit Rückgabewert
+
+-> mit **einem Return** kann genau **ein Wert** an die aufrufende Instanz zurückgegeben werden
+
+-> eine Funktion kann aber **mehrere return-statements** enthalten -> sie **beenden** die **Funktion** und **definieren** den **Rückgabewert**
+
+-> **Rückgabewert** kann (genau wie die Funktionsargumente) ein **primitiver Wert** oder auch ein **Objekt** sein
+
+-> **wenn kein return** innerhalb einer Funktion aufgerufen wird - > wird die Funktion nach dem letzten Statement verlassen und als **undefined** zurückgegeben
+
+### Achtung zwischen return und Rückgabewert dürfen keine Zeilenumbrüche stehen, JS glaubt sonst, da würde ein ; fehlen und fügt eins automatisch in Semikolon ein
+
+->**mehr als ein Wert** kann man nur an eine Funktion zurückgeben, wenn es sich um ein **Array** bzw. ein **Objekt** handelt bzw. die Werte dort drin stehen und auf diese Weise verkapselt als ein Wert zurückgegeben werden
+
+## Variablen Scope
+
+-> Scope = Gültigkeitsbereich und Bereich, in dem die Variable sichtbar ist
+
+-> globaler Scope = dort befinden sich alle Variablen, die außerhalb einer Funktion definiert wurden
+
+-> innerhalb einer definierten Funktion -> eigener Scope gütlig -> Funktionsscope -> für die Parameter der besagten Funktion und alle Variablen, die innerhalb der Funktion definiert wurden
+
+-> globaler Scope dem Funktionsscope übergeordnet
+
+-> wird innerhalb des Funktionsscopes eine Variable genutzt, die im inneren Scope nicht definiert wurde wird auf die Variable im äußeren Scope zurückgegriffen
+
+-> wird im Funktionsscope eine Variable angelegt, die es im globalen Scope schon gibt wird die im globalen Scope von der im inneren Scope überdeckt
+
+```
+var bar = 1;
+var baz = 17;
+var foo = function () {
+    var baz = 2;             // Erzeugt eine neue Variable im inneren Scope
+    var zap = 9;             // Noch eine neue Variable
+    return bar + baz + zap;
+  };
+foo();                       // Gibt 12 zurück
+bar + zap;                   // Erzeugt einen Ausführungsfehler, da zap nicht definiert wurde.
+```
