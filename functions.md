@@ -240,11 +240,11 @@
 
 ## Variablen Scope
 
--> Scope = Gültigkeitsbereich und Bereich, in dem die Variable sichtbar ist
+-> **Scope** = Gültigkeitsbereich und Bereich, in dem die Variable sichtbar ist
 
--> globaler Scope = dort befinden sich alle Variablen, die außerhalb einer Funktion definiert wurden
+-> **globaler Scope** = dort befinden sich alle Variablen, die außerhalb einer Funktion definiert wurden
 
--> innerhalb einer definierten Funktion -> eigener Scope gütlig -> Funktionsscope -> für die Parameter der besagten Funktion und alle Variablen, die innerhalb der Funktion definiert wurden
+-> innerhalb einer definierten Funktion -> eigener Scope gütlig -> **Funktionsscope** -> für die Parameter der besagten Funktion und alle Variablen, die innerhalb der Funktion definiert wurden
 
 -> globaler Scope dem Funktionsscope übergeordnet
 
@@ -263,3 +263,29 @@ var foo = function () {
 foo();                       // Gibt 12 zurück
 bar + zap;                   // Erzeugt einen Ausführungsfehler, da zap nicht definiert wurde.
 ```
+-> ineinander verschachtelte Funktionen sind möglich -> die Funktion innerhalb einer anderen ist dann Teil des Scopes der äußeren Funktion -> der Code der inneren Variable kann auf die Variablen der innerne Function, der äußeren Function und auf die Variablen im globalen Scope zugreifen
+
+```
+var bar = 1;
+var baz = 17;
+var berechne = function (c) {
+    var helper = function(a, b) {     // Geschachtelte Funktion, kann auf c zugreifen
+        return a*(b+c);
+    };
+    var ergebnis = helper(2, 7);      // Erzeugt eine neue Variable im inneren Scope
+    return ergebnis;
+};
+berechne(17);                         // Gibt 48 zurück
+helper(1,2);                          // Fehler, helper ist hier nicht definiert
+
+```
+
+### Achtung: Beachte das hoisting, wenn du Variablen mit var definierst. Sie werden An den Anfang der Funktion gehoben, in der sie definiert wurden - > Man kann sie nicht lokal zu einem Anweisungsblock definieren, der geschweifte Klammert markiert wurde
+
+-> Deshalb wurden **let** und **const** als **neue Keywords** für Variablen eingeführt. Deren **Scope ist auf den Anwendungsblock begrenzt, in dem sie notiert sind**
+
+-> **Deshalb gibt es in Javascript nur die Block- und Funktions-Scope**
+
+## Weiteres zu Funktionen
+
+-> <a hrf="https://wiki.selfhtml.org/wiki/JavaScript/Funktion">und noch viel mehr über Funktionen</a>
